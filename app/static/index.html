@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCAR-F Labs</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>CCAR-F Labs</h1>
+        <div class="subtitle">Claude Certified Architect — Foundations</div>
+      </div>
+      <div class="sidebar-home" onclick="App.goHome()">
+        <span class="home-icon">📊</span>
+        <span>Progress Dashboard</span>
+      </div>
+      <div class="progress-bar-wrapper">
+        <div class="progress-label">
+          <span>Progress</span>
+          <span class="progress-count">0/0 steps</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+      <div class="lab-list"></div>
+      <div class="sidebar-footer">
+        <button class="sidebar-footer-btn" onclick="App.openSettings()">
+          🔑 Set API Key
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main area -->
+    <div class="main"></div>
+  </div>
+
+  <!-- Mobile sidebar toggle -->
+  <button class="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
